@@ -12,17 +12,6 @@ bot = commands.Bot("!")
 async  def on_ready():
     print(f'ready')
 
-# @bot.command(name='wc')
-# async def test(ctx):
-#     message = await ctx.send(send[0])
-#     try:
-#       for c in range(len(send) - 1):
-#           await message.edit(content=send[c])
-#           # time.sleep(0.80)
-#     except:
-#         pass
-
-
 #com cache
 # @bot.command(name='wc')
 # async def test(ctx):
