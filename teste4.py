@@ -1,7 +1,7 @@
 from array_nova import text_turner
 from duplicidade_sspliter import sspliter
 
-a = text_turner('C:\poar mano\discord_web_cam\img18.jpg')
+a = text_turner('C:\poar mano\discord_web_cam\img18.jpg') # some random .jpg to start
 # print(a)
 def ajuste(param):
     enter = '\n'
