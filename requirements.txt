@@ -1,0 +1,3 @@
+opencv-python==4.5.5.64
+discord.py==1.7.3
+pywhatkit==5.3
