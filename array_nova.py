@@ -19,6 +19,6 @@ def text_turner(local):
     return a
 
 if __name__ == '__main__':
-    rr = 'F:\code\discord_web_cam\img18.jpg'
+    rr = 'C:\your_directory\your_img.jpg' # debug only
     aqui = text_turner(rr)
     print(aqui)
