@@ -12,28 +12,6 @@ bot = commands.Bot("!")
 async  def on_ready():
     print(f'ready')
 
-#com cache
-# @bot.command(name='wc')
-# async def test(ctx):
-#     message = await ctx.send(send[0])
-#     try:
-#         reff_pick = 18
-#         webcam = cv2.VideoCapture(0)
-#         if webcam.isOpened():
-#             validacao, frame = webcam.read()
-#             while validacao:
-#                 validacao, frame = webcam.read()
-#                 reff_pick += 1
-#                 cv2.imwrite('F:\code\discord_bot\cache_interno\img{}.jpg'.format(reff_pick), frame)
-#                 bmw = text_turner('F:\code\discord_bot\cache_interno\img{}.jpg'.format(reff_pick))
-#                 bmw = ajuste(bmw)
-#                 await message.edit(content=bmw)
-#                 key = cv2.waitKey(700)
-#                 if key == 27:
-#                     break
-#     except:
-#         pass
-
 #sem cache
 @bot.command(name='wc')
 async def test(ctx):
