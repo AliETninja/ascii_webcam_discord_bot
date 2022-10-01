@@ -6,37 +6,11 @@ import time
 import cv2
 import os
 
-send = []
-for c in range(19, 75):
-    bmw = text_turner('C:\poar mano\discord_web_cam\cache_img\img{}.jpg'.format(c))
-    send.append(ajuste(bmw))
-
-here_value = text_turner('C:\poar mano\discord_web_cam\cache_img\img19.jpg')
-fixed = ajuste(here_value)
-
 bot = commands.Bot("!")
 
 @bot.event
 async  def on_ready():
-    print(f'estou pronto !!')
-
-
-@bot.command(name='oi')
-async def send_hello(ctx):
-    name = ctx.author.name
-
-    time.sleep(3)
-
-    response = "ola, " + name
-
-    await ctx.send(response)
-
-@bot.command(name='onwc')
-async def web_cam(ctx):
-
-    response = fixed
-
-    await ctx.send(response)
+    print(f'ready')
 
 # @bot.command(name='wc')
 # async def test(ctx):
