@@ -24,7 +24,7 @@ async def test(ctx):
             while validacao:
                 validacao, frame = webcam.read()
                 reff_pick += 1
-                cv2.imwrite('C:\your_directory\img1.jpg', frame) # some folder in your computer
+                cv2.imwrite('C:\your_directory\img1.jpg', frame) # your directory to save the .img
                 bmw = text_turner('C:\your_directory\img1.jpg')
                 bmw = ajuste(bmw)
                 await message.edit(content=bmw)
