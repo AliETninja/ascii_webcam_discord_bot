@@ -15,6 +15,7 @@ def text_turner(local):
     a = a.replace('@', '▒')
     a = a.replace('&', '▒')
     a = a.replace('$', '█')
+    arquivo.close()
     return a
 
 if __name__ == '__main__':
