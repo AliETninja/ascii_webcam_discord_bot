@@ -46,11 +46,11 @@ async def test(ctx):
             while validacao:
                 validacao, frame = webcam.read()
                 reff_pick += 1
-                cv2.imwrite('F:\code\discord_bot\cache_interno\img1.jpg', frame) # some folder in your computer
-                bmw = text_turner('F:\code\discord_bot\cache_interno\img1.jpg')
+                cv2.imwrite('C:\your_directory\img1.jpg', frame) # some folder in your computer
+                bmw = text_turner('C:\your_directory\img1.jpg')
                 bmw = ajuste(bmw)
                 await message.edit(content=bmw)
-                os.remove(r'F:\code\discord_bot\cache_interno\img1.jpg')
+                os.remove(r'C:\your_directory\img1.jpg')
                 key = cv2.waitKey(700)
                 if key == 27:
                     break
